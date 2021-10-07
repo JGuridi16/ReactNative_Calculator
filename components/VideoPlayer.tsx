@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Linking, StyleSheet, Text, View } from 'react-native';
 
 const VideoPlayer = () => {
-  const video = React.useRef(null);
+  const videoLink = "https://drive.google.com/file/d/1l6fURMcaq9aS4D5xoAnCkmzMzVtkDR7X/view?usp=sharing";
   return (
     <>
       <View>
-        
+        <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(videoLink)}></Text>
       </View>
     </>
   )
